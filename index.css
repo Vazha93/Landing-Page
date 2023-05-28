@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    background-size: contain;
+    min-height: 100vh;
+    background-image: url(./images/bg-mobile.svg);
+    background-color: #684BB1;
+    background-repeat: no-repeat;
+}
+
+.main_div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+    margin-left: 40px;
+}
+
+.text_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.logo_1 {
+    width: 120px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.title {
+    Font-family: Poppins;
+    Font-style: SemiBold;
+    font-weight: 600;
+    Font-size: 24px;
+    Line-height: 36px;
+    color: #FFFFFF;
+    width: 280px;
+    height: 72px;
+    text-align: center;
+}
+
+.image_1 {
+    width: 280px;
+    padding: 10px 0px 90px 0px;
+    margin-top: 70px;
+}
+
+
+.paragraph {
+    Font-family: Open Sans;
+    Font-style: Regular;
+    Font-size: 16px;
+    Line-height: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    width: 304px;
+    text-align: center;
+}
+
+.text_div {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.269);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    background-color: #FFFFFF;
+}
+
+.text_div:hover {
+    background-color: #FF52C1;
+    cursor: pointer;
+}
+
+.text_div:hover .registration {
+    color: white;
+}
+
+.registration {
+    Font-family: Poppins;
+    font-weight: 400;
+    Font-style: Regular;
+    Font-size: 12px;
+    Line-height: 18px;
+    color: #684BB1;
+}
+
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+svg path {
+    fill: white;
+}
+
+.facebook_logo {
+    width: 9px;
+    height: 19px;
+}
+
+.twitter_logo {
+    width: 17.64px;
+    height: 18.2px;
+}
+
+.instagram_logo {
+    width: 12.77px;
+    height: 13.18px;
+}
+
+.logos_div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.circle {
+    height: 27.14px;
+    width: 28px;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #684BB1;
+    border: 1px solid white;
+}
+
+.circle:hover {
+    border: 1px solid #FF52C1;
+    cursor: pointer;
+}
+
+.circle:hover svg path {
+    fill: #FF52C1;
+}
+
+@media screen and (min-width:1440px) {
+
+    body {
+        background-image: url(./images/bg-desktop.svg);
+    }
+
+
+    .main_div {
+        display: flex;
+        padding-left: 40px;
+    }
+
+    .logo_1 {
+        width: 200px;
+    }
+
+    .text_image {
+        gap: 60px;
+        flex-direction: unset;
+    }
+
+    .image_1 {
+        width: 600px;
+        margin-left: 90px;
+        margin-top: 35px;
+    }
+
+    .texts {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+        margin-top: 100px;
+    }
+
+    .title {
+        width: 487px;
+        height: 120px;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: unset;
+        margin-right: 40px;
+    }
+
+    .paragraph {
+        width: 520px;
+        height: 81px;
+        line-height: 27px;
+        font-size: 18px;
+        text-align: unset;
+    }
+
+    .text_div {
+        height: 56px;
+        border-radius: 28px;
+        margin-bottom: 70px;
+        margin-top: unset;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .twitter_logo {
+        width: 26px;
+        height: 26px;
+    }
+
+
+    .instagram_logo {
+        width: 18.82px;
+        height: 18.82px;
+    }
+
+    .logos_div {
+        padding-left: 360px;
+        padding-top: 50px;
+    }
+
+
+    .registration {
+        line-height: 27px;
+        font-size: 18px;
+    }
+
+}
